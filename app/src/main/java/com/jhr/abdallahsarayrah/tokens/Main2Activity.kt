@@ -14,10 +14,10 @@ class Main2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-//
-        var manager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
-        var s = object : LocationListener {
+        val manager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+
+        val s = object : LocationListener {
             override fun onLocationChanged(p0: Location) {
                 Toast.makeText(this@Main2Activity,
                         p0.latitude.toString() + " " + p0.longitude,
