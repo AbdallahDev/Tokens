@@ -14,7 +14,7 @@ class Main2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-
+////
         val manager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
 
         val s = object : LocationListener {
